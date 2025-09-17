@@ -1,5 +1,7 @@
 #include <stdio.h>
-// --- Variáveis da Carta 1 ---
+
+int main() {
+    // --- Variáveis da Carta 1 ---
     char estado1;
     char codigoCarta1[5];
     char nomeCidade1[50];
@@ -18,13 +20,13 @@
     int pontosTuristicos2;
 
     // ============================
-    //    CADASTRO DA CARTA 1
+    //     CADASTRO DA CARTA 1
     // ============================
     printf("--- Cadastro da Carta 1 ---\n");
 
     printf("Estado (A ao H): ");
     scanf(" %c", &estado1);
-    while (getchar() != '\n');
+    while (getchar() != '\n'); // Limpa o buffer de entrada
 
     printf("Codigo da Carta (ex: A01): ");
     scanf("%s", codigoCarta1);
@@ -53,7 +55,7 @@
     printf("\n");
 
     // ============================
-    //    CADASTRO DA CARTA 2
+    //     CADASTRO DA CARTA 2
     // ============================
     printf("--- Cadastro da Carta 2 ---\n");
 
@@ -86,7 +88,7 @@
     while (getchar() != '\n');
 
     // ===========================================
-    //    EXIBICAO DAS CARTAS CADASTRADAS
+    //     EXIBICAO DAS CARTAS CADASTRADAS
     // ===========================================
     printf("\n\n--- Cartas Cadastradas ---\n");
 
@@ -107,5 +109,6 @@
     printf("Area: %.2f km2\n", area2);
     printf("PIB: %.2f bilhoes de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
-return 0;
-} 
+
+    return 0; // Indica que o programa terminou com sucesso
+}
